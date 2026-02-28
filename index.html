@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rishabh Cancer Care (RCC) | Where Care Triumphs Cancer</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar d-none d-lg-block">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center py-2">
+        <div class="d-flex gap-4 small text-white-80">
+          <span><i class="bi bi-geo-alt"></i> Jaipur, Rajasthan</span>
+          <span><i class="bi bi-telephone"></i> +91 90000 00000</span>
+          <span><i class="bi bi-clock"></i> Mon–Sat: 10AM–7PM</span>
+        </div>
+        <div class="d-flex gap-2 align-items-center">
+          <span class="top-pill"><i class="bi bi-shield-check"></i> Trusted Oncology Care</span>
+          <button class="btn btn-sm btn-rcc-light" data-bs-toggle="modal" data-bs-target="#leadModal">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top nav-main">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <!-- Put your logo file here: /images/rcc-logo.png -->
+        <img src="Images/Logo.png" alt="Rishabh Cancer Care" width="300" >
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-lg-4 me-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#treatments">Treatments</a></li>
+          <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Patient Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="d-flex gap-2 align-items-center">
+          <a class="btn btn-outline-rcc d-none d-lg-inline-flex" href="tel:+919000000000">
+            <i class="bi bi-telephone"></i> Call Now
+          </a>
+          <button class="btn btn-rcc d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#leadModal">
+            <i class="bi bi-calendar2-check"></i> Book Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Where Care Triumphs Cancer
+          </div>
+
+          <h1 class="hero-title">
+            Comprehensive Cancer Care with <span>Compassion</span> & <span>Precision</span>
+          </h1>
+
+          <p class="hero-sub">
+            RCC provides consultation, diagnosis guidance, and treatment planning with trusted specialists.
+            Patient-first support, transparent communication, and evidence-based care.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <button class="btn btn-rcc btn-lg" data-bs-toggle="modal" data-bs-target="#leadModal">
+              <i class="bi bi-calendar2-check"></i> Book Appointment
+            </button>
+            <a class="btn btn-outline-rcc btn-lg" href="#treatments">
+              Explore Treatments <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats mt-4">
+            <div class="stat">
+              <div class="stat-ico"><i class="bi bi-hospital"></i></div>
+              <div>
+                <div class="stat-val">Multi</div>
+                <div class="stat-lbl">Disciplinary Care</div>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="stat-ico"><i class="bi bi-clipboard2-pulse"></i></div>
+              <div>
+                <div class="stat-val">End-to-End</div>
+                <div class="stat-lbl">Patient Guidance</div>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="stat-ico"><i class="bi bi-shield-check"></i></div>
+              <div>
+                <div class="stat-val">Trusted</div>
+                <div class="stat-lbl">Care Pathways</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-card">
+            <div class="hc-top">
+              <div>
+                <div class="hc-kicker">Need urgent guidance?</div>
+                <div class="hc-title">Request a Callback in 10 minutes*</div>
+              </div>
+              <span class="hc-chip"><i class="bi bi-lightning-charge"></i> Fast Support</span>
+            </div>
+
+            <div class="hc-line"></div>
+
+            <form class="row g-2">
+              <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Your name">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input class="form-control form-control-lg" type="tel" placeholder="+91">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Concern</label>
+                <select class="form-select form-select-lg">
+                  <option selected>Select</option>
+                  <option>Consultation</option>
+                  <option>Second Opinion</option>
+                  <option>Chemo / Immunotherapy Planning</option>
+                  <option>Surgery Guidance</option>
+                  <option>Radiation Planning</option>
+                </select>
+              </div>
+              <div class="col-12 d-grid">
+                <button type="button" class="btn btn-rcc btn-lg">
+                  Submit <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+              <div class="col-12">
+                <div class="note">*Subject to availability. By submitting, you agree to be contacted.</div>
+              </div>
+            </form>
+          </div>
+
+          <div class="hero-shape hero-shape-1"></div>
+          <div class="hero-shape hero-shape-2"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust Strip -->
+  <section class="strip">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="strip-card">
+            <div class="strip-ico"><i class="bi bi-person-check"></i></div>
+            <div>
+              <div class="strip-title">Doctor-led Guidance</div>
+              <div class="strip-sub">Clear steps & next actions</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="strip-card">
+            <div class="strip-ico"><i class="bi bi-journal-medical"></i></div>
+            <div>
+              <div class="strip-title">Second Opinion Support</div>
+              <div class="strip-sub">Case review & treatment options</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="strip-card">
+            <div class="strip-ico"><i class="bi bi-heart-pulse"></i></div>
+            <div>
+              <div class="strip-title">Patient-first Care</div>
+              <div class="strip-sub">Empathy + precision</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments -->
+  <section id="treatments" class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Treatments & Services</h2>
+          <p class="section-sub">Replace these with your exact RCC service list.</p>
+        </div>
+        <button class="btn btn-outline-rcc d-none d-md-inline-flex" data-bs-toggle="modal" data-bs-target="#leadModal">
+          Enquire Now <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="svc">
+            <div class="svc-ico"><i class="bi bi-virus2"></i></div>
+            <div class="svc-title">Medical Oncology</div>
+            <div class="svc-sub">Chemo & systemic therapy</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="svc">
+            <div class="svc-ico"><i class="bi bi-broadcast"></i></div>
+            <div class="svc-title">Radiation Oncology</div>
+            <div class="svc-sub">Radiation planning support</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="svc">
+            <div class="svc-ico"><i class="bi bi-scissors"></i></div>
+            <div class="svc-title">Surgical Oncology</div>
+            <div class="svc-sub">Surgery guidance & referrals</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="svc">
+            <div class="svc-ico"><i class="bi bi-activity"></i></div>
+            <div class="svc-title">Immunotherapy</div>
+            <div class="svc-sub">Eligibility & planning</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="svc">
+            <div class="svc-ico"><i class="bi bi-capsule"></i></div>
+            <div class="svc-title">Targeted Therapy</div>
+            <div class="svc-sub">Personalized options</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="svc">
+            <div class="svc-ico"><i class="bi bi-file-earmark-medical"></i></div>
+            <div class="svc-title">Second Opinion</div>
+            <div class="svc-sub">Case review & plan</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="svc">
+            <div class="svc-ico"><i class="bi bi-droplet"></i></div>
+            <div class="svc-title">Onco Diagnostics</div>
+            <div class="svc-sub">Reports & interpretation</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="svc">
+            <div class="svc-ico"><i class="bi bi-plus-circle"></i></div>
+            <div class="svc-title">More Services</div>
+            <div class="svc-sub">Explore all</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors -->
+  <section id="doctors" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Our Specialists</h2>
+          <p class="section-sub">Add real doctor names, degrees, experience & photos.</p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="doc">
+            <div class="doc-img"></div>
+            <div class="doc-body">
+              <div class="doc-name">Dr. Doctor Name</div>
+              <div class="doc-meta">Medical Oncologist • 10+ yrs</div>
+              <div class="d-flex gap-2 mt-3">
+                <button class="btn btn-rcc w-100" data-bs-toggle="modal" data-bs-target="#leadModal">Book</button>
+                <a class="btn btn-outline-rcc w-100" href="#contact">Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="doc">
+            <div class="doc-img doc-img2"></div>
+            <div class="doc-body">
+              <div class="doc-name">Dr. Doctor Name</div>
+              <div class="doc-meta">Radiation Oncologist • 12+ yrs</div>
+              <div class="d-flex gap-2 mt-3">
+                <button class="btn btn-rcc w-100" data-bs-toggle="modal" data-bs-target="#leadModal">Book</button>
+                <a class="btn btn-outline-rcc w-100" href="#contact">Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="doc">
+            <div class="doc-img doc-img3"></div>
+            <div class="doc-body">
+              <div class="doc-name">Dr. Doctor Name</div>
+              <div class="doc-meta">Surgical Oncologist • 15+ yrs</div>
+              <div class="d-flex gap-2 mt-3">
+                <button class="btn btn-rcc w-100" data-bs-toggle="modal" data-bs-target="#leadModal">Book</button>
+                <a class="btn btn-outline-rcc w-100" href="#contact">Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Patient Journey -->
+  <section id="journey" class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Patient Journey</h2>
+          <p class="section-sub">Simple, guided steps — from first call to care plan.</p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="step">
+            <div class="step-no">01</div>
+            <div class="step-title">Share Reports</div>
+            <div class="step-sub">WhatsApp / Upload reports for review.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step">
+            <div class="step-no">02</div>
+            <div class="step-title">Doctor Consultation</div>
+            <div class="step-sub">Discuss symptoms, stage & options.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step">
+            <div class="step-no">03</div>
+            <div class="step-title">Care Plan</div>
+            <div class="step-sub">Personalized treatment plan & timeline.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step">
+            <div class="step-no">04</div>
+            <div class="step-title">Continuous Support</div>
+            <div class="step-sub">Follow-ups, guidance & coordination.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-cta mt-4">
+        <div>
+          <div class="journey-title">Not sure what to do next?</div>
+          <div class="journey-sub">Talk to our team — we’ll guide you step-by-step.</div>
+        </div>
+        <div class="d-flex gap-2 flex-wrap">
+          <a class="btn btn-outline-rcc" href="tel:+919000000000"><i class="bi bi-telephone"></i> Call</a>
+          <button class="btn btn-rcc" data-bs-toggle="modal" data-bs-target="#leadModal">
+            Book Appointment <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Patient Stories</h2>
+          <p class="section-sub">Replace with real reviews (Google / Practo / etc.).</p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-lg-4">
+          <div class="review">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">“Clear guidance and supportive staff. We felt confident with the care plan.”</p>
+            <div class="review-name">— Patient Name</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="review">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">“Doctor explained everything in detail. Very professional and empathetic.”</p>
+            <div class="review-name">— Patient Name</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="review">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">“Quick appointment and excellent follow-up support. Highly recommended.”</p>
+            <div class="review-name">— Patient Name</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-soft">
+    <div class="container">
+      <div class="contact">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-7">
+            <h3 class="contact-title">Contact Rishabh Cancer Care</h3>
+            <p class="contact-sub">Appointment / second opinion / treatment guidance — we’re here to help.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="btn btn-outline-rcc" href="tel:+919000000000"><i class="bi bi-telephone"></i> Call Now</a>
+              <button class="btn btn-rcc" data-bs-toggle="modal" data-bs-target="#leadModal">
+                Request Callback <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="contact-box">
+              <div class="mini">Clinic</div>
+              <div class="strong">Rishabh Cancer Care (RCC)</div>
+              <div class="mini mt-2">Address</div>
+              <div class="strong">Your Address Line, Jaipur</div>
+              <div class="mini mt-2">Email</div>
+              <div class="strong">info@rcccare.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <img src="images/rcc-logo.png" alt="RCC" class="footer-logo">
+          <p class="footer-sub mt-2">
+            Where Care Triumphs Cancer. Compassionate support and structured oncology care.
+          </p>
+          <div class="d-flex gap-2">
+            <a class="social" href="#"><i class="bi bi-instagram"></i></a>
+            <a class="social" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="social" href="#"><i class="bi bi-youtube"></i></a>
+            <a class="social" href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <div class="footer-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#treatments">Treatments</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#journey">Patient Journey</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="footer-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#treatments">Oncology Consultation</a></li>
+            <li><a href="#treatments">Second Opinion</a></li>
+            <li><a href="#treatments">Therapy Planning</a></li>
+            <li><a href="#treatments">Support & Follow-ups</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="footer-title">Call</div>
+          <div class="footer-mini"><i class="bi bi-telephone"></i> +91 90000 00000</div>
+          <div class="footer-mini"><i class="bi bi-geo-alt"></i> Jaipur, Rajasthan</div>
+          <button class="btn btn-rcc w-100 mt-2" data-bs-toggle="modal" data-bs-target="#leadModal">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="small">© 2026 RCC. All rights reserved.</div>
+        <div class="small d-flex gap-3">
+          <a class="footer-mini-link" href="#">Privacy</a>
+          <a class="footer-mini-link" href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-sticky d-lg-none">
+    <a class="sticky-call" href="tel:+919000000000" aria-label="Call">
+      <i class="bi bi-telephone"></i>
+    </a>
+
+    <button class="sticky-btn" data-bs-toggle="modal" data-bs-target="#leadModal">
+      <span class="pulse"></span>
+      Book Appointment
+      <i class="bi bi-arrow-right"></i>
+    </button>
+
+    <a class="sticky-wa" href="#" aria-label="WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Popup Modal -->
+  <div class="modal fade" id="leadModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content lead-modal">
+        <div class="modal-header border-0 pb-0">
+          <div>
+            <div class="modal-kicker">RCC Appointment</div>
+            <h5 class="modal-title">Book Consultation / Callback</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body pt-2">
+          <form class="row g-2">
+            <div class="col-md-6">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Your name">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control form-control-lg" placeholder="+91">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Service</label>
+              <select class="form-select form-select-lg">
+                <option selected>Select service</option>
+                <option>Consultation</option>
+                <option>Second Opinion</option>
+                <option>Treatment Planning</option>
+                <option>Follow-up</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="3" placeholder="Tell us your concern"></textarea>
+            </div>
+
+            <div class="col-12 d-grid mt-2">
+              <button type="button" class="btn btn-rcc btn-lg">
+                Submit Request <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+
+            <div class="col-12">
+              <div class="note">By submitting, you agree to be contacted by RCC team.</div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
