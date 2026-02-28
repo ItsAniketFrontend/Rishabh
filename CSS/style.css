@@ -64,8 +64,14 @@ a {
 }
 
 .logo-img {
-  height: 44px;
-  width: auto;
+  width: 300px;
+  height: auto;
+}
+@media (max-width: 991px) {
+  .logo-img {
+    width: auto;
+    height: 90px;
+  }
 }
 
 .nav-link {
